@@ -5,8 +5,8 @@ const userAns = await inquirer.prompt([
     {
         type: "input",
         name: "sentence",
-        message: "Write your sentence to count the words?"
-    }
+        message: "Write your sentence to count the words?",
+    },
 ]);
 console.log(chalk.bgBlueBright("***Wellcome to Our Word Counter***"));
 const words = userAns.sentence.trim().split(" ");
